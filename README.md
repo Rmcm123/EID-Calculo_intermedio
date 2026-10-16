@@ -12,10 +12,10 @@
 ## Integrantes
 
 | Integrante | Cuenta de GitHub | Responsabilidad principal |
-|---|---|
-| Renato Cáceres | Rmcm123 | Investigación y desarrollo matemático 
-| Victor Hidalgo | vhidalgo0 | Implementación y visualización en Manim 
-| Lucas Núñez | nunezpinillalucas435-dev | Guion, documentación y organización del video 
+|---|---|---|
+| Renato Cáceres | Rmcm123 | Investigación y desarrollo matemático |
+| Victor Hidalgo | vhidalgo0 | Implementación y visualización en Manim |
+| Lucas Núñez | nunezpinillalucas435-dev | Guion, documentación y organización del video |
 
 ## Resumen del proyecto
 
@@ -32,8 +32,8 @@ Se estudia un estanque con 150 L iniciales y caudal neto r(t) = 12 − 2t (L/min
 
 Archivo principal: (). Los nombres de escena deben coincidir con los del código entregado (Victor confirma):
 
-| # | Escena        | Contenido | Voz |
-|---|---|
+| # | Escena | Contenido | Voz |
+|---|---|---|---|
 | 1 | () | Presentación: integrantes, tema y pregunta central | Lucas |
 | 2 | () | Teoría: V′ = r, aportes r(t*)·Δt, suma de Riemann, integral y relación V(b) = V(a) + ∫r | Renato |
 | 3 | () | Estanque y sumas de Riemann para n = 4, 8, 16, 32 (izquierda y derecha) | Victor |
