@@ -1,49 +1,110 @@
-Investigación por Renato Cáceres.
+# Investigación por Renato Cáceres
 
-1. Cambio acumulado versus cantidad final
+## 1. Cambio acumulado versus cantidad final
 
-¿Por qué integrar una tasa de cambio no entrega necesariamente la catidad final?
+### Pregunta central
 
-Para comenzar:
+**¿Por qué integrar una tasa de cambio no entrega necesariamente la cantidad final?**
 
-1)¿que es una tasa de cambio?
+Para comenzar, debemos responder tres preguntas:
 
-2)¿Que información nos entrega una integral? 
+1. ¿Qué es una tasa de cambio?
+2. ¿Qué información nos entrega una integral?
+3. ¿Cuál es la diferencia entre un cambio acumulado y una cantidad final?
 
-3)¿Cual es la diferencia entre un cambio acumulado y una cantidad final?
+---
 
-Una tasa de cambio indica que tan rapido aumenta o disminuye una cantidad con respecto a otra variable.
+## 2. ¿Qué es una tasa de cambio?
 
-su si una cantidad se representa mediante una función \(Q(t)\), entonces su tasa de cambio se puede representar mediante su derivada
+Una tasa de cambio indica qué tan rápido aumenta o disminuye una cantidad con respecto a otra variable.
 
-\[
-r(t) = Q'(t)
-\]
-
-- \(Q(t)\) representa la cantidad que estamos estudiando.
-- \(t\) representa el tiempo.
-- \(r(t)\) representa la tasa de cambio de esa cantidad.
-
-por ejemplo, si \(Q(t)\) representa la cantidad de agua que existe en un estanque en un instante especifico, entonces \(Q(t)\) indica que tan rápido está aumentando o disminuyendo la cantidad de agua.
-
-si: 
+Si una cantidad se representa mediante una función $Q(t)$, entonces su tasa de cambio se puede representar mediante su derivada:
 
 $$
-Q'(t)=5 \text{ L/min}
+r(t)=Q'(t)
+$$
+
+donde:
+
+- $Q(t)$ representa la cantidad que estamos estudiando.
+- $t$ representa el tiempo.
+- $r(t)$ representa la tasa de cambio de esa cantidad.
+
+Por ejemplo, si $Q(t)$ representa la cantidad de agua que existe en un estanque en un instante específico, entonces $Q'(t)$ indica qué tan rápido está aumentando o disminuyendo la cantidad de agua.
+
+Si:
+
+$$
+Q'(t)=5\text{ L/min}
 $$
 
 significa que la cantidad de agua está aumentando a una razón de 5 litros por minuto.
 
-en cambio si:
+En cambio, si:
 
 $$
-Q'(t)=-5 \text{ L/min}
+Q'(t)=-5\text{ L/min}
 $$
 
-significa que la cantidad de agua está disminuyendo a una razon de 5 litros por minuto.
+significa que la cantidad de agua está disminuyendo a una razón de 5 litros por minuto.
 
-por lo que el signo de la tasa de cambio tambien nos entrega información.
+Por lo tanto, el signo de la tasa de cambio también nos entrega información:
 
-- Si \(r(t)>0\), la cantidad aumenta.
-- Si \(r(t)<0\), la cantidad disminuye.
-- Si \(r(t)=0\), en ese instante la cantidad no está cambiando.
+- Si $r(t)>0$, la cantidad aumenta.
+- Si $r(t)<0$, la cantidad disminuye.
+- Si $r(t)=0$, en ese instante la cantidad no está cambiando.
+
+---------------------------------------------------------------------------------------------
+
+## 2)¿Qué información nos entrega una integral?
+
+Una integral definida nos permite acumular los valores de una funcion a lo largo de un intervalo.
+
+En este caso como estamos trabajando con una tasa de cambio de  $r(t)$, la integral nos permite conocer cuanto cambió en total la catidad estudiada entre un instante iniciar $a$ y un instante
+final $b$.
+
+Este cambio se puede representar como:
+
+$$
+\Delta Q = \int_a^b r(t)\,dt
+$$
+
+Donde:
+
+- $a$ representa el instante inicial.
+- $b$ representa el instante final.
+- $r(t)$ representa la tasa de cambio.
+- $\Delta Q$ representa el cambio acumulado de la cantidad.
+
+  por lo que al integrar una tasa de cambio, no estamos obteniendo directamente el valor final de la cantidad, si no cuanto aumentó o disminuyó durante el intervalo.
+
+  ### ¿Por qué hablamos de "acumulación"?
+
+durante pequeños intervalos de tiempo $\Delta t$ ocurre un pequeño cambio en la cantidad, este pequeño cambio se puede aproximar con:
+
+$$
+r(t)\Delta t
+$$
+
+Por ejemplo, si durante un pequeño intervalo la tasa es aproximadamente: 
+
+$$
+r(t)=5\text{ L/min}
+$$
+
+y pasa un minuto, el cambio producido seria aproximadamente:
+
+$$
+5\frac{\text{L}}{\text{min}}\cdot1\text{ min}=5\text{ L}
+$$
+
+Si dividimos un intervalo completo en muchos intervalos pequeños y sumamos todos estos cambios, obtenemos una aproximación del cambio total.
+
+
+La integral representa el limite de este proceso de acumulación:
+
+$$
+\Delta Q=\int_a^b r(t)\,dt
+$$
+
+Por eso, cuando integramos una tasa de cambio, obtenemos el cambio acumulado durante el intervalo
