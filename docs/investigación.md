@@ -108,3 +108,77 @@ $$
 $$
 
 Por eso, cuando integramos una tasa de cambio, obtenemos el cambio acumulado durante el intervalo
+
+## 3) ¿Cuál es la diferencia entre un cambio acumulado y una cantidad final?
+
+El cambio acumulado y la cantidad final son conceptos distintos.
+
+El **cambio acumulado** indica cuanto aumentó o disminuyó una cantidad durante un intervalo.
+
+Se calcula mediante:
+
+$$
+\Delta Q=\int_a^b r(t)\,dt
+$$
+
+En cambio la **cantidad final** representa el valor que tiene la cantidad estudiada al terminar el intervalo.
+
+para obtenerla necesitamos conocer tambien la cantidad inicial.
+
+la relación es 
+
+$$
+\boxed{Q(b)=Q(a)+\int_a^b r(t)\,dt}
+$$
+
+donde :
+
+- $Q(a)$ es la cantidad inicial.
+- $\int_a^b r(t)\,dt$ es el cambio acumulado.
+- $Q(b)$ es la cantidad final.
+
+o tambien
+
+$$
+\boxed{\text{Cantidad final}=\text{Cantidad inicial}+\text{Cambio acumulado}}
+$$
+
+Esta diferencia es justamente la idea principal de la investigación.
+
+La integral de la tasa nos indica cuanto cambió la cantidad, pero no necesariamente cuanto vale al final, ya que para conocer el valor final tambien necesitaríamos saber con que cantidad comenzamos.
+
+### ejemplo
+
+supongamos que un estanque comienza con: 
+
+$$
+100\text{ L}
+$$
+
+y durante cierto intervalo la integral de su tasa de cambio entrega:
+
+$$
+\int_a^b r(t)\,dt=20\text{ L}
+$$
+
+Estos $20$ listros representan el **cambio acumulado**, no la cantidad final.
+
+Como inicialmente existian 100 litros
+
+$$
+Q(b)=100+20
+$$
+
+por lo tanto
+
+$$
+Q(b)=120\text{ L}
+$$
+
+Entonces tenemos:
+
+- Cantidad inicial: $100\text{ L}$
+- Cambio acumulado: $+20\text{ L}$
+- Cantidad final: $120\text{ L}$
+
+Esto demuestra que integrar la tasa de cambio no necesariamente entrega la cantidad final.
