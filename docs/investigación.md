@@ -5,6 +5,7 @@ Investigación por Renato Cáceres.
 ¿Por qué integrar una tasa de cambio no entrega necesariamente la catidad final?
 
 Para comenzar:
+
 1)¿que es una tasa de cambio?
 
 2)¿Que información nos entrega una integral? 
