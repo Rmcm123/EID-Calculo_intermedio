@@ -534,10 +534,13 @@ James Stewart se utilizó como fuente complementaria para los conceptos relacion
 
 ## Bibliografía
 
-1. Larson, R., Hostetler, R. P., & Edwards, B. H. (2006).  
-   *Cálculo I* (8.ª ed.).  
-   McGraw-Hill Interamericana.
+1. Larson, R., & Edwards, B. H. (2010).  
+   *Cálculo 1 de una variable* (9.ª ed.).  
+   McGraw-Hill Interamericana.  
+   ISBN: 978-607-15-0273-5.
 
-2. Stewart, J. (2018).  
-   *Cálculo: Trascendentes tempranas* (8.ª ed.).  
-   Cengage Learning.
+
+2. Stewart, J. (2012).  
+   *Cálculo de varias variables: Trascendentes tempranas* (7.ª ed.).  
+   Cengage Learning.  
+   ISBN: 978-607-481-898-7.
