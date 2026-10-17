@@ -182,3 +182,109 @@ Entonces tenemos:
 - Cantidad final: $120\text{ L}$
 
 Esto demuestra que integrar la tasa de cambio no necesariamente entrega la cantidad final.
+
+## 4) Ejemplo de desarrollo
+
+
+Supongamos que un estanque contiene inicialmente:
+
+$$
+Q(0)=100\text{ L}
+$$
+
+La cantidad de agua del estanque cambia con el tiempo. Su tasa de cambio está dada por:
+
+$$
+r(t)=Q'(t)=2t
+$$
+
+donde $t$ representa el tiempo medido en minutos.
+
+Esto significa que la tasa de cambio no es constante, sino que aumenta con el tiempo.
+
+Por ejemplo:
+
+- En $t=0$, la tasa es $r(0)=0$ L/min.
+- En $t=1$, la tasa es $r(1)=2$ L/min.
+- En $t=2$, la tasa es $r(2)=4$ L/min.
+- En $t=5$, la tasa es $r(5)=10$ L/min.
+
+Queremos saber cuánto cambió la cantidad de agua entre los minutos 0 y 5.
+
+### Cálculo del cambio acumulado
+
+Para obtener el cambio acumulado entre $t=0$ y $t=5$, integramos la tasa de cambio:
+
+$$
+\Delta Q=\int_0^5 2t\,dt
+$$
+
+Sacamos la constante 2:
+
+$$
+\Delta Q=2\int_0^5 t\,dt
+$$
+
+Calculamos una antiderivada de $t$:
+
+$$
+\int t\,dt=\frac{t^2}{2}
+$$
+
+Por lo tanto:
+
+$$
+\Delta Q=
+2\left[\frac{t^2}{2}\right]_0^5
+$$
+
+El 2 se simplifica con el denominador:
+
+$$
+\Delta Q=
+[t^2]_0^5
+$$
+
+Ahora evaluamos en los extremos:
+
+$$
+\Delta Q=5^2-0^2
+$$
+
+$$
+\Delta Q=25
+$$
+
+Por lo tanto:
+
+$$
+\boxed{\Delta Q=25\text{ L}}
+$$
+
+### Unidades
+
+La función $r(t)$ representa una tasa de cambio, por lo que sus unidades son litros por minuto:
+
+$$
+\frac{\text{L}}{\text{min}}
+$$
+
+Al integrar respecto del tiempo, $dt$ tiene unidades de minutos.
+
+Por lo tanto:
+
+$$
+\frac{\text{L}}{\text{min}}\cdot\text{min}
+=
+\text{L}
+$$
+
+Por esta razón, el resultado de la integral está expresado en litros.
+
+Entonces:
+
+$$
+\int_0^5 r(t)\,dt=25\text{ L}
+$$
+
+significa que durante esos cinco minutos la cantidad de agua aumentó en 25 litros.
