@@ -6,7 +6,9 @@ Investigación por Renato Cáceres.
 
 Para comenzar:
 1)¿que es una tasa de cambio?
+
 2)¿Que información nos entrega una integral? 
+
 3)¿Cual es la diferencia entre un cambio acumulado y una cantidad final?
 
 Una tasa de cambio indica que tan rapido aumenta o disminuye una cantidad con respecto a otra variable.
