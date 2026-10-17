@@ -211,6 +211,57 @@ Por ejemplo:
 
 Queremos saber cuánto cambió la cantidad de agua entre los minutos 0 y 5.
 
+### Supuestos del ejemplo
+
+Para desarrollar el ejemplo del estanque se consideran los siguientes supuestos:
+
+- El tiempo $t$ se mide en minutos.
+- La cantidad de agua $Q(t)$ se mide en litros.
+- El estanque contiene inicialmente:
+
+$$
+Q(0)=100\text{ L}
+$$
+
+- La tasa de cambio del agua está dada por:
+
+$$
+r(t)=2t
+$$
+
+y se mide en litros por minuto.
+
+- El intervalo de tiempo estudiado es:
+
+$$
+0\leq t\leq5
+$$
+
+- Se considera que todos los cambios de agua que ocurren en el estanque están representados por la tasa $r(t)$.
+- No se consideran otros ingresos o pérdidas de agua externos a los representados por la función.
+
+### Continuidad de la tasa de cambio
+
+La función utilizada como tasa de cambio es:
+
+$$
+r(t)=2t
+$$
+
+Esta función es continua en todo el intervalo:
+
+$$
+[0,5]
+$$
+
+Esto significa que la tasa de cambio no presenta saltos ni interrupciones durante el intervalo estudiado.
+
+Al ser continua en el intervalo, podemos calcular el cambio acumulado mediante la integral:
+
+$$
+\Delta Q=\int_0^5 r(t)\,dt
+$$
+
 ### Cálculo del cambio acumulado
 
 Para obtener el cambio acumulado entre $t=0$ y $t=5$, integramos la tasa de cambio:
@@ -286,3 +337,91 @@ $$
 $$
 
 significa que durante esos cinco minutos la cantidad de agua aumentó en 25 litros.
+
+### Caso especial: cantidad inicial igual a cero
+
+Normalmente, el cambio acumulado y la cantidad final no son iguales, debido a que para calcular la cantidad final también debemos considerar la cantidad inicial.
+
+La relación utilizada es:
+
+$$
+Q(b)=Q(a)+\int_a^b r(t)\,dt
+$$
+
+Sin embargo, existe un caso especial en el que la cantidad inicial es igual a cero.
+
+Si:
+
+$$
+Q(a)=0
+$$
+
+entonces:
+
+$$
+Q(b)=0+\int_a^b r(t)\,dt
+$$
+
+Por lo tanto:
+
+$$
+\boxed{Q(b)=\int_a^b r(t)\,dt}
+$$
+
+En este caso particular, el valor del cambio acumulado y la cantidad final coinciden.
+
+Por ejemplo, si el mismo estanque comenzara completamente vacío:
+
+$$
+Q(0)=0\text{ L}
+$$
+
+y mantuviéramos la misma tasa de cambio:
+
+$$
+r(t)=2t
+$$
+
+durante el intervalo de 0 a 5 minutos, tendríamos:
+
+$$
+\int_0^5 2t\,dt=25\text{ L}
+$$
+
+Como la cantidad inicial es cero:
+
+$$
+Q(5)=0+25
+$$
+
+por lo tanto:
+
+$$
+Q(5)=25\text{ L}
+$$
+
+Entonces tenemos:
+
+- Cantidad inicial: $0\text{ L}$
+- Cambio acumulado: $25\text{ L}$
+- Cantidad final: $25\text{ L}$
+
+En este caso, la integral y la cantidad final coinciden numéricamente debido a que la cantidad inicial es igual a cero.
+
+## 5) Fuentes utilizadas
+
+Para desarrollar los conceptos relacionados con tasa de cambio, derivadas, integrales y acumulación se utilizaron textos de cálculo como fuentes matemáticas de apoyo.
+
+Ron Larson se utilizó principalmente para respaldar los conceptos relacionados con derivadas, tasas de cambio e integración.
+
+James Stewart se utilizó como fuente complementaria para los conceptos relacionados con integral definida, acumulación y la relación existente entre derivación e integración.
+
+## Bibliografía
+
+1. Larson, R., Hostetler, R. P., & Edwards, B. H. (2006).  
+   *Cálculo I* (8.ª ed.).  
+   McGraw-Hill Interamericana.
+
+2. Stewart, J. (2018).  
+   *Cálculo: Trascendentes tempranas* (8.ª ed.).  
+   Cengage Learning.
