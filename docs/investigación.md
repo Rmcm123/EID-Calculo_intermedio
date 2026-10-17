@@ -147,41 +147,7 @@ Esta diferencia es justamente la idea principal de la investigación.
 
 La integral de la tasa nos indica cuanto cambió la cantidad, pero no necesariamente cuanto vale al final, ya que para conocer el valor final tambien necesitaríamos saber con que cantidad comenzamos.
 
-### ejemplo
-
-supongamos que un estanque comienza con: 
-
-$$
-100\text{ L}
-$$
-
-y durante cierto intervalo la integral de su tasa de cambio entrega:
-
-$$
-\int_a^b r(t)\,dt=20\text{ L}
-$$
-
-Estos $20$ listros representan el **cambio acumulado**, no la cantidad final.
-
-Como inicialmente existian 100 litros
-
-$$
-Q(b)=100+20
-$$
-
-por lo tanto
-
-$$
-Q(b)=120\text{ L}
-$$
-
-Entonces tenemos:
-
-- Cantidad inicial: $100\text{ L}$
-- Cambio acumulado: $+20\text{ L}$
-- Cantidad final: $120\text{ L}$
-
-Esto demuestra que integrar la tasa de cambio no necesariamente entrega la cantidad final.
+o demuestra que integrar la tasa de cambio no necesariamente entrega la cantidad final.
 
 ## 4) Ejemplo de desarrollo
 
@@ -279,10 +245,34 @@ $$
 Calculamos una antiderivada de $t$:
 
 $$
-\int t\,dt=\frac{t^2}{2}
+\int t\,dt=\frac{t^2}{2}+C
 $$
 
-Por lo tanto:
+Por lo tanto, la antiderivada de $2t$ es:
+
+$$
+\int 2t\,dt=t^2+C
+$$
+
+La constante $C$ aparece porque estamos calculando una integral indefinida y existen infinitas funciones que tienen como derivada $2t$.
+
+Sin embargo, al calcular una integral definida, la constante se cancela al evaluar los dos extremos.
+
+Por ejemplo:
+
+$$
+(5^2+C)-(0^2+C)
+$$
+
+$$
+25+C-C
+$$
+
+$$
+25
+$$
+
+Por esta razón, para calcular la integral definida podemos escribir:
 
 $$
 \Delta Q=
@@ -337,6 +327,132 @@ $$
 $$
 
 significa que durante esos cinco minutos la cantidad de agua aumentó en 25 litros.
+
+### Cálculo de la cantidad final
+
+El resultado obtenido mediante la integral corresponde al cambio acumulado:
+
+$$
+\Delta Q=25\text{ L}
+$$
+
+Sin embargo, el estanque ya contenía inicialmente:
+
+$$
+Q(0)=100\text{ L}
+$$
+
+Por lo tanto, utilizamos la relación:
+
+$$
+\boxed{\text{Cantidad final}=\text{Cantidad inicial}+\text{Cambio acumulado}}
+$$
+
+Entonces:
+
+$$
+Q(5)=Q(0)+\Delta Q
+$$
+
+Reemplazamos los valores:
+
+$$
+Q(5)=100+25
+$$
+
+Por lo tanto:
+
+$$
+\boxed{Q(5)=125\text{ L}}
+$$
+
+Entonces tenemos:
+
+- Cantidad inicial: $100\text{ L}$
+- Cambio acumulado: $25\text{ L}$
+- Cantidad final: $125\text{ L}$
+
+Es decir:
+
+$$
+\boxed{100\text{ L}+25\text{ L}=125\text{ L}}
+$$
+
+Esto permite ver claramente que los 25 litros obtenidos mediante la integral no representan la cantidad final, sino el cambio que ocurrió durante el intervalo.
+
+### Obtención de la función de cantidad
+
+También podemos obtener la función que representa la cantidad de agua utilizando la tasa de cambio.
+
+Sabemos que:
+
+$$
+Q'(t)=2t
+$$
+
+Por lo tanto:
+
+$$
+Q(t)=\int 2t\,dt
+$$
+
+Al integrar obtenemos:
+
+$$
+Q(t)=t^2+C
+$$
+
+En este caso necesitamos determinar el valor de $C$.
+
+Sabemos que la cantidad inicial es:
+
+$$
+Q(0)=100
+$$
+
+Por lo tanto:
+
+$$
+100=0^2+C
+$$
+
+Entonces:
+
+$$
+C=100
+$$
+
+La función que representa la cantidad de agua en el estanque es:
+
+$$
+\boxed{Q(t)=t^2+100}
+$$
+
+Podemos comprobar el resultado evaluando la función en $t=5$:
+
+$$
+Q(5)=5^2+100
+$$
+
+$$
+Q(5)=25+100
+$$
+
+$$
+\boxed{Q(5)=125\text{ L}}
+$$
+
+También podemos comprobar la tasa de cambio derivando la función:
+
+$$
+Q'(t)=\frac{d}{dt}(t^2+100)
+$$
+
+$$
+\boxed{Q'(t)=2t}
+$$
+
+De esta forma obtenemos nuevamente la tasa de cambio utilizada inicialmente.
 
 ### Caso especial: cantidad inicial igual a cero
 
