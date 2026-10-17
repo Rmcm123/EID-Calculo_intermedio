@@ -271,12 +271,10 @@ $$
 
 Al integrar respecto del tiempo, $dt$ tiene unidades de minutos.
 
-Por lo tanto:
+Por lo que:
 
 $$
-\frac{\text{L}}{\text{min}}\cdot\text{min}
-=
-\text{L}
+\frac{\mathrm{L}}{\mathrm{min}}\cdot \mathrm{min}=\mathrm{L}
 $$
 
 Por esta razón, el resultado de la integral está expresado en litros.
@@ -284,7 +282,7 @@ Por esta razón, el resultado de la integral está expresado en litros.
 Entonces:
 
 $$
-\int_0^5 r(t)\,dt=25\text{ L}
+\int_0^5 r(t)\,dt=25\mathrm{L}
 $$
 
 significa que durante esos cinco minutos la cantidad de agua aumentó en 25 litros.
