@@ -26,16 +26,16 @@ r(t) = Q'(t)
 por ejemplo, si \(Q(t)\) representa la cantidad de agua que existe en un estanque en un instante especifico, entonces \(Q(t)\) indica que tan rápido está aumentando o disminuyendo la cantidad de agua.
 si: 
 
-\[
+$$
 Q'(t)=5 \text{ L/min}
-\]
+$$
 
 significa que la cantidad de agua está aumentando a una razón de 5 litros por minuto.
 en cambio si:
 
-\[
+$$
 Q'(t)=-5 \text{ L/min}
-\]
+$$
 significa que la cantidad de agua está disminuyendo a una razon de 5 litros por minuto.
 por lo que el signo de la tasa de cambio tambien nos entrega información.
 
