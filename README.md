@@ -22,24 +22,18 @@ Se estudia un estanque con 100 L iniciales y caudal neto r(t) = 2t (L/min) en el
 
 ## Versiones y dependencias
 
-- Python: 3.10 o mayor
-- Manim Community: ()
-- Otras dependencias: ()
-- Para renderizar: ()
+- Python utilizado: 3.14.
+- Manim Community: 0.22.0.
+- Dependencias especificadas en `requirements.txt`.
 
-## Escenas y ejecución
+## Ejecución
 
-Archivo principal: (). Los nombres de escena deben coincidir con los del código entregado (Victor confirma):
+Archivo principal: `main.py`.
 
-| # | Escena | Contenido | Voz |
-|---|---|---|---|
-| 1 | () | Presentación: integrantes, tema y pregunta central | Lucas |
-| 2 | () | Tasa de cambio: Q′(t) = r(t) y significado del signo (r > 0 aumenta, r < 0 disminuye, r = 0 no cambia) | Lucas |
-| 3 | () | Integral y acumulación: aportes r(t)·Δt, suma de los aportes, límite e integral ΔQ = ∫r dt | Renato |
-| 4 | () | Q(0) = 100 L y Q(0) = 40 L; cambio acumulado vs. cantidad final: Q(b) = Q(a) + ∫r | Renato |
-| 5 | () | Cálculo exacto: antiderivada t²/2, ΔQ = [t²]₀⁵ = 25 L y unidades (L/min · min = L) | Victor |
-| 6 | () | Respuesta y cierre | Victor |
-
+Para renderizar:
+```bash
+python -m manim -ql main.py Presentacion
+```
 
 ## Parámetros matemáticos usados en las escenas
 
