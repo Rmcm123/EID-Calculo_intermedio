@@ -2,7 +2,7 @@
 
 ## presentación: lucas
 
-"buenas tardes, somos el grupo 7: Renato Cáceres, Victor Hidalgo y yo, Lucas Núñez. Nuestro tema es cambio acumulado versus cantidad final. Y nuestra pregunta central es: ¿por qué integrar una tasa de cambio no entrega necesariamente la cantidad final? Para responderla vamos a usar un ejemplo con un estanque de agua."
+"buenos días, somos el grupo 7: Renato Cáceres, Victor Hidalgo y yo, Lucas Núñez. Nuestro tema es cambio acumulado versus cantidad final. Y nuestra pregunta central es: ¿por qué integrar una tasa de cambio no entrega necesariamente la cantidad final? Para responder a la pregunta vamos a usar un ejemplo con un estanque de agua."
 
 ## tasa de cambio: lucas
 
