@@ -18,8 +18,7 @@
 | Lucas Núñez | nunezpinillalucas435-dev | Guion, documentación y organización del video |
 
 ## Resumen del proyecto
-
-Se estudia un estanque con 150 L iniciales y caudal neto r(t) = 12 − 2t (L/min) en el intervalo [0, 8] min. Se construyen sumas de Riemann con n = 4, 8, 16 y 32, se calcula la integral exacta (32 L) y se muestra que el volumen final (182 L) se obtiene como **cantidad inicial + cambio acumulado**. Con otra cantidad inicial (40 L) la integral es la misma, pero el volumen final es 72 L.
+Se estudia un estanque con 100 L iniciales y caudal neto r(t) = 2t (L/min) en el intervalo [0, 5] min. Se calcula la integral exacta (ΔQ = t²) quedando ΔQ = 25 L y se muestra que el volumen final se obtiene como cantidad inicial (100 L) + cambio acumulado (25 L), quedando como resultado 125 L . Con otra cantidad inicial cómo 40 L la integral es la misma, pero el volumen final es 65 L.
 
 ## Versiones y dependencias
 
@@ -35,21 +34,18 @@ Archivo principal: (). Los nombres de escena deben coincidir con los del código
 | # | Escena | Contenido | Voz |
 |---|---|---|---|
 | 1 | () | Presentación: integrantes, tema y pregunta central | Lucas |
-| 2 | () | Teoría: V′ = r, aportes r(t*)·Δt, suma de Riemann, integral y relación V(b) = V(a) + ∫r | Renato |
-| 3 | () | Estanque y sumas de Riemann para n = 4, 8, 16, 32 (izquierda y derecha) | Victor |
-| 4 | () | Cálculo exacto: F(t) = 12t − t², áreas con signo 36 − 4 = 32 | Renato |
-| 5 | () | V(t) con V(0) = 150 y V(0) = 40; cambio acumulado vs. cantidad final | Lucas |
-| 6 | () | Respuesta y cierre | Renato, Victor, Lucas |
+| 2 | () | Tasa de cambio: Q′(t) = r(t) y significado del signo (r > 0 aumenta, r < 0 disminuye, r = 0 no cambia) | Lucas |
+| 3 | () | Integral y acumulación: aportes r(t)·Δt, suma de los aportes, límite e integral ΔQ = ∫r dt | Renato |
+| 4 | () | Q(0) = 100 L y Q(0) = 40 L; cambio acumulado vs. cantidad final: Q(b) = Q(a) + ∫r | Renato |
+| 5 | () | Cálculo exacto: antiderivada t²/2, ΔQ = [t²]₀⁵ = 25 L y unidades (L/min · min = L) | Victor |
+| 6 | () | Respuesta y cierre | Victor |
 
 
 ## Parámetros matemáticos usados en las escenas
 
 | Parámetro | Valor |
 |---|---|
-| Función (tasa) | r(t) = 12 − 2t, en L/min |
-| Intervalo | [0, 8] min |
-| Número de subintervalos | n = 4, 8, 16, 32 |
-| Ancho | Δt = 8/n |
-| Puntos muestra | Extremos izquierdos y derechos |
-| Cantidad inicial | V(0) = 150 L (caso comparativo: V(0) = 40 L) |
-| Resultados | ∫₀⁸ r dt = 32 L · V(8) = 182 L (o 72 L) |
+| Función (tasa) | r(t) = 2t, en L/min |
+| Intervalo | [0, 5] min |
+| Cantidad inicial | Q(0) = 100 L (caso comparativo: Q(0) = 40 L) |
+| Resultados | ∫₀⁵ r dt = 25 L · Q(5) = 125 L (o 65 L) |
