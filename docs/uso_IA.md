@@ -2,7 +2,7 @@
 
 **Curso:** MAT1188 – Cálculo Intermedio · **Integrantes:** Renato Cáceres, Victor Hidalgo, Lucas Núñez
 
-Este documento se declarará si se usó IA, que IA se usó, el integrante que la usó y que uso le dió.
+En este documento se declarará si se usó IA, que IA se usó y el uso que se le dió.
 
 |IA | razón |
 |---|---|
